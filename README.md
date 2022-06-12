@@ -15,7 +15,7 @@ Install with your favorite plugin manager. For example with vim-plug:
 
 ```lua
 Plug 'RishabhRD/popfix'
-Plug 'RishabhRD/nvim-cheat.sh'
+Plug 'Mohamed-Fathy-Salah/nvim-cheat.sh'
 ```
 
 ## Working
@@ -47,6 +47,15 @@ Second and fourth command opens the prompt with initial prompt text
 ``cpp reverse number`` to search with and without comments respectively.
 
 CheatList and CheatListWithoutComments provides fuzzy finding from all available symbols.
+
+## Configuration
+
+Add to your lua configuation file the files that you want.
+
+`require("nvim-cheat").detectFileTypes = {'cpp', 'lua', 'python'}`
+
+Example:
+Working on a `cpp` file and typed `:Cheat reverse linked list`, you will get results for cpp language.
 
 ## Changing result layout
 By default result is displayed in a floating window. However, this may be
